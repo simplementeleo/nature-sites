@@ -1,5 +1,6 @@
 <template>
     <div>
+        <!-- Estoy en bulma -->
         <main class="container">
             <article class="row">
                 <section class="img">
