@@ -54,8 +54,8 @@
 </template>
 
 <style lang="scss" scoped>
-// Estoy en Test
-    // @import '../scss/responsive';
+    // Estoy en Test
+    @import '../scss/responsive';
 
     .container {
         margin: 1em 3.5em;
@@ -65,7 +65,7 @@
             display: grid;
             grid-gap: 50px;
             grid-template-columns: minmax(300px, 500px) 1fr 100px;
-            // grid-template-rows: repeat(4, auto);
+            grid-template-rows: repeat(1fr, auto);
             grid-template-areas:
                 "img other ejeY"
                 "img other ejeY"
@@ -74,13 +74,13 @@
             align-content: center;
             justify-content: center;
 
-            @media (max-width: 1080px) {
-                 
+            @media (max-width: $md) {
+
                 grid-template-areas:
-                    
-                    "other other ejeY"
+
                     "img img ejeY"
-                    
+                    "other other ejeY"
+                    "other other ejeY"
                     "footer footer footer";
                 // background: red;
             }
@@ -95,11 +95,31 @@
                 display: grid;
                 justify-content: center;
                 align-content: center;
+               
+
+                @media (max-width: $md) {
+                    width: 100%;
+                    height: 150px;
+                    background: url('../assets/santorini.jpg') no-repeat fixed center;
+                    // background-size: 100% ;
+                    // background: rgba(0, 0, 0, 0.1);
+
+                }
+
 
                 img {
                     width: 100%;
                     // height: 100%;
                     border-radius: 5px;
+                    
+                    @media (max-width: $md) {
+                        width: 100%;
+                        
+                        // height: 200px;
+                        // clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+                        display: none;
+                        
+                    }
                 }
             }
 
@@ -139,6 +159,11 @@
                     grid-template-rows: auto;
                     grid-gap: 20px;
 
+                    @media (max-width: 1080px) {
+                        // grid-template-columns: minmax(250px, 1fr);
+                    }
+
+
                     .card {
                         color: white;
                         background: #ef5e3d;
@@ -147,7 +172,7 @@
                         align-items: center;
                         padding: 0 10%;
                         height: 8em;
-                        border-radius: 7px;
+                        border-radius: 5px;
                         box-shadow: 2px 3px 15px #ef5e3d54;
                         transition: all ease-in-out .3s;
                         cursor: pointer;
@@ -281,6 +306,7 @@
             footer {
                 grid-area: footer;
                 padding: 0 0 1.5em 0;
+
                 a {
                     margin-right: 3em;
                     text-decoration: none;
