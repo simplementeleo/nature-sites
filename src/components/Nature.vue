@@ -12,7 +12,7 @@
                         <span></span>
                         <p>Grecia</p>
                     </div>
-                    <h1>Santorini</h1>
+                    <h1>Santorani</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis rerum harum ut saepe dicta.</p>
                     <div class="area">
                         <p>Area: <span>26.289 KM<sup>2</sup></span></p>
