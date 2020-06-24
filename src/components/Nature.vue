@@ -54,6 +54,7 @@
 </template>
 
 <style lang="scss" scoped>
+// Estoy en Test
     // @import '../scss/responsive';
 
     .container {
@@ -83,7 +84,7 @@
                     "footer footer footer";
                 // background: red;
             }
-// Estoy en Test
+
 
             .img {
                 // background: #000;
