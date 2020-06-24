@@ -64,7 +64,7 @@
             display: grid;
             grid-gap: 50px;
             grid-template-columns: minmax(300px, 500px) 1fr 100px;
-            grid-template-rows: repeat(4, auto);
+            // grid-template-rows: repeat(4, auto);
             grid-template-areas:
                 "img other ejeY"
                 "img other ejeY"
