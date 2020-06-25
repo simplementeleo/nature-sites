@@ -26,7 +26,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1.5em 3.5em;
+            padding: 2em 0;
 
             .logo {
                 color: black;
