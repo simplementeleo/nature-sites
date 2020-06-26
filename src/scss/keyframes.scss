@@ -1,0 +1,13 @@
+.show{
+    animation: contentHome ease-in .5s;
+}
+@keyframes contentHome {
+    from {
+        opacity: 0;
+        transform: translateY(-5px)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

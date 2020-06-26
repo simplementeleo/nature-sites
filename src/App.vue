@@ -22,6 +22,7 @@ export default {
 * {
   margin: 0;
   padding: 0;
+  transition: all ease .4s;
 }
 @import 'scss/responsive';
 #app {
