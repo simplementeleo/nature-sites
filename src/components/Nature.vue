@@ -4,10 +4,10 @@
     <main class="container">
       <article class="row">
         <section class="img show">
-          <img v-bind:src="getImgUrl()" @load="false">
+          <img v-bind:src="getImgUrl()">
         </section>
         <section class="others">
-          <div class="guide__travel">
+          <div class="guide__travel show" >
             <h4>Guía</h4>
             <img src="../assets/compass.svg" alt>
             <span></span>
@@ -68,7 +68,7 @@
                 <i></i>
               </p>
             </div>
-            <div @click="j >= end ? j-- : ''" :class="['arrow', {'none': j == 0}]">
+            <div @click="j <= end ? j-- : ''" :class="['arrow', {'none': j == 0}]">
               <!-- Anterior -->
               <p>
                 <i></i>
@@ -97,14 +97,20 @@ export default {
   data() {
     return {
       j: 0,
-      end: this.sites.length -1
+      end: this.sites.length -1,
     };
   },
   methods: {
+       onImgLoad () {
+      this.isLoaded = true
+    },
     getImgUrl() {
       var images = require.context("../assets/", false);
       return images("./" + this.sites[this.j].nameImg);
     },
+    onWindowLoad(){
+        console.log('Cargado')
+    }
   },
   computed: {
     countAll() {
@@ -120,6 +126,9 @@ export default {
     //    this.nextPrev()
     console.log(this.j);
     
-  }
+  },
+  create() {
+        document.querySelector('img').addEventListener("load", this.onWindowLoad);
+    },
 };
 </script>

@@ -33,7 +33,7 @@ export default {
   // background: #000;
   padding: 0 3.5em;
   @media (max-width: $x-sm){
-    padding: 0 1em;
+    padding: 0 2em;
   }
 
 }

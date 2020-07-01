@@ -9,9 +9,9 @@
                     <li>
                         <router-link to="/">Inicio</router-link>
                     </li>
-                    <li>
+                    <!-- <li>
                         <router-link to="/about">Contacto</router-link>
-                    </li>
+                    </li> -->
                 </ul>
             </nav>
         </header>

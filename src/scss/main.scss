@@ -68,8 +68,9 @@
             .area {
                 display: flex;
                 padding: 30px 0;
+                flex-direction: row;
 
-                @media (max-width: x-sm) {
+                @media (max-width: $x-sm) {
                     flex-direction: column;
                 }
 

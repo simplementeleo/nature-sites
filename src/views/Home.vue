@@ -30,7 +30,29 @@ export default {
           state: 'Sahara',
           area: '50.000',
           maxLength: '100.000', 
+        },
+        {
+          nameImg: 'machu.jpg',
+          country: 'Perú',
+          state: 'Machu Pichu',
+          area: '50.000',
+          maxLength: '100.000', 
+        },
+        {
+          nameImg: 'patagonia.jpg',
+          country: 'Argentina',
+          state: 'Patagonia',
+          area: '50.000',
+          maxLength: '100.000', 
+        },
+        {
+          nameImg: 'asm-1.jpg',
+          country: 'Paises Bajos',
+          state: 'Ámsterdam',
+          area: '50.000',
+          maxLength: '100.000', 
         }
+
       ]
     }
   }
