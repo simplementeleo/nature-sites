@@ -9,7 +9,7 @@
                     <li>
                         <router-link to="/">Inicio</router-link>
                     </li>
-                    <!-- <li>
+                    <!-- <li>f
                         <router-link to="/about">Contacto</router-link>
                     </li> -->
                 </ul>
